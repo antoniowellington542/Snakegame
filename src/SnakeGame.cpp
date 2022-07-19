@@ -1,5 +1,5 @@
-#include "SnakeGame.hpp"
-#include "Player.hpp"
+#include "../include/SnakeGame.hpp"
+#include "../include/Player.hpp"
 
 #include <iostream>
 #include <fstream>
@@ -118,7 +118,9 @@ void SnakeGame::render(){
         case GAME_OVER:
             cout<<"O jogo terminou!"<<endl;
             break;
-    }
+        case WAITING_IA:
+            break;
+}
     m_frameCount++;
 }
 
